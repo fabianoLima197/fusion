@@ -1,0 +1,8 @@
+#pip install django psycopg2-binary gunicorn dj-static django-stdimage
+#pip freeze > requirements.txt
+
+#django-admin startproject nomedoprojeto .  => o ponto e para ser criado dentro do projeto
+
+#django-admin stratapp nomedaaplicação
+
+configura dirs [templates] - adiciona a aplicação, e la na parte de baixo na settingd e urls
