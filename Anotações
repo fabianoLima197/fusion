@@ -6,3 +6,7 @@
 #django-admin stratapp nomedaaplicação
 
 configura dirs [templates] - adiciona a aplicação, e la na parte de baixo na settingd e urls
+
+nos arquivpo index.html foi modificado toda img foi colocado {% static 'o caminho do arquivo' %}
+
+criado o arquivo base.html copiado tudo do index e feio algumas alterações ... so olhando
