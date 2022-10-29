@@ -17,7 +17,7 @@
         }
     });
 
-    // one page navigation 
+    // one-page navigation
     $('.navbar-nav').onePageNav({
       currentClass: 'active'
     });
