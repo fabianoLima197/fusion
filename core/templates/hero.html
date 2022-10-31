@@ -21,3 +21,14 @@
           </div>
         </div>
       </div>
+      <div>
+        {% if messages %}
+            {% for m in messages %}
+              <div class="alert aler-{{ message.tags }}" >
+                <button type="button" class="close" data-bs-dismiss="alert"></button>
+                <strong>{{ m }}</strong>
+              </div>
+            {% endfor %}
+        {% endif %}
+      </div>
+</headers>
