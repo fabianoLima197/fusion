@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -81,6 +82,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+'''
+DATABASES = {
+    'default': dj_database_url.config()
+}'''
 
 '''DATABASES = {
     'default': {
@@ -145,6 +150,9 @@ EMAIL_PORT = '587'
 EMAIL_USE_TSL = TRUE => se tiver segurança no e-mail
 EMAIL_HOST_FROM_EMAIL = 'contato@fusion.com.br => email da empresa que vai enviar '
 '''
+
+LOGOUT_REDIRECT_URL = 'index'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
