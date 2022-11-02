@@ -14,7 +14,7 @@ class GetFilePathTestCase(TestCase):
 
 class ServicoTestCase(TestCase):
     def setUp(self):
-        self.servicos = mommy.make('Servicos')
+        self.servico = mommy.make('Servicos')
 
     def tes_str(self):
         self.assertEquals(str(self.servicos), self.servicos.servicos)
